@@ -1,0 +1,19 @@
+//Waybar Config
+//Christian Felske
+{
+    "include": ["~/.config/waybar/modules.json"],
+
+    "layer": "top",
+    "height": 40,
+    "margin-bottom": 8,
+    "margin-top": 8,
+    "margin-left": 8,
+    "margin-right": 8,
+    "spacing": 0,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": [
+        "clock",
+        "battery"
+    ]
+}
