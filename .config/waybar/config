@@ -4,12 +4,14 @@
     "include": ["~/.config/waybar/modules.json"],
 
     "layer": "top",
-    "height": 40,
+    "height": 56,
     "spacing": 0,
 
-    "modules-left": ["custom/launcer"],
+    "modules-left": ["custom/launcher", "hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": [
+        "tray",
+        "pulseaudio",
         "clock",
         "battery"
     ]

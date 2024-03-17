@@ -2,38 +2,59 @@
 //Christian Felske
 {
     "custom/launcher": {
-        "format": "<span foreground='#00FFFF' font='20' rise='-1000'> </span>",
-        "on-click": "wofi --show drun"
+        "format": "",
+        "on-click": "wofi --show drun",
+        "tooltip": false
     },
 
     "hyprland/workspaces": {
         "on-click": "activate",
         "active-only": false,
         "all-outputs": true,
-        "format": " ",
+        "format": "",
         "format-icons": {
             "urgent": " ",
             "active": " ",
             "default": " "
         },
         "persistent-workspaces": {
-            "*": 1
+            "*": 3
         }
     },
 
+    "hyprland/window": {
+        "format": " {initialTitle}",
+        "rewrite": {
+            "(.*) Mozilla Firefox": " Firefox",
+            "(.*) Alacritty": " Alacritty",
+            "(.*) Code - OSS": " VSCode",
+            "(.*) Discord": " Discord",
+            "(.*) ": " -"
+        },
+        "seperate-outputs": true
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " {volume}%",
+        "format-icons": ["", "", ""],
+        "on-click": "pavucontrol"
+    },
+
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "format": " {:%H:%M}",
+        "tooltip": false
     },
 
     "battery": {
         "states": {
-            "warning": 50,
+            "warning": 30,
             "critical": 10
         },
         "format": "{icon} {capacity}%",
-        "format-charging": "    {capacity}%",
-        "format-plugged": "    {capacity}%",
+        "format-charging": "{icon} {capacity}%",
+        "format-plugged": "{icon} {capacity}%",
         "format-alt": "{icon} {time}",
-        "format-icons": ["  ", "  ", "  ", "  ", "  "]
+        "format-icons": ["", "", "", "", ""]
     }
 }
