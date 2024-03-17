@@ -1,6 +1,11 @@
 //Waybar Modules
 //Christian Felske
 {
+    "custom/launcher": {
+        "format": "<span foreground='#00FFFF' font='20' rise='-1000'> </span>",
+        "on-click": "wofi --show drun"
+    },
+
     "hyprland/workspaces": {
         "on-click": "activate",
         "active-only": false,
@@ -22,7 +27,7 @@
 
     "battery": {
         "states": {
-            "warning": 25,
+            "warning": 50,
             "critical": 10
         },
         "format": "{icon} {capacity}%",

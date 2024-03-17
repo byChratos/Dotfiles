@@ -6,14 +6,15 @@
 }
 
 window#waybar {
-  background: transparent;
+  background: #161b1d;
   color: white;
 }
 
-#workspaces {
-  background-color: #2f2f2f;
+#workspaces, #clock, #battery, #launcher {
+  margin: 10px;
+  background-color: #212728;
   padding: 0px 8px;
-  border: 2px solid #fff;
+  border: 1px solid #404647;
   border-radius: 15px;
 }
 
@@ -25,26 +26,30 @@ window#waybar {
   min-height: 20px;
   min-width: 20px;
   padding: 0px;
-  margin: 10px 8px;
-  background: transparent;
+  margin: 6px 6px;
+  background: #404647;
   border-radius: 100%;
-  border: 2px solid #fff;
+  border: 1px solid #404647;
   transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.68);
   box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
 }
 
 #workspaces button.active {
   border-radius: 1rem;
-  min-width: 50px;
-  background-color: #f2238f;
-  border: 2px solid #f2238f;
+  min-width: 60px;
+  background-color: #234cf2;
+  border: 1px solid #234cf2;
   background-size: 400% 400%;
   animation: gradient_f 20s ease-in-out infinite;
   transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
 #workspaces button:hover {
-  background-color: blue;
+  background-color: white;
+}
+
+#workspaces button.active:hover {
+  background-color: #f2238f;
 }
 
 @keyframes gradient_f {
@@ -61,13 +66,13 @@ window#waybar {
   }
 }
 
-#clock, #battery {
-  padding: 0 3px;
-  margin: 0 2px;
-}
-
 #clock {
   font-weight: bold;
+}
+
+#battery {
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 #battery icon {
