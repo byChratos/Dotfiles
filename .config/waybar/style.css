@@ -1,3 +1,5 @@
+@import "../../.cache/wal/colors-waybar.css";
+
 * {
   border: none;
   border-radius: 0;
@@ -11,12 +13,17 @@ window#waybar {
   color: white;
 }
 
-#workspaces, #clock, #battery, #custom-launcher, #tray, #window, #pulseaudio{
+#workspaces, #clock, #battery, #custom-launcher, #tray, #window, #pulseaudio, #custom-wlogout{
   margin: 10px 10px 10px 0px;
   background-color: #212728;
   padding: 0px 8px;
   border: 1px solid #404647;
   border-radius: 15px;
+}
+
+#custom-wlogout {
+  font-size: 20px;
+  min-width: 34px;
 }
 
 #custom-launcher {
@@ -44,16 +51,16 @@ window#waybar {
 #workspaces button.active {
   border-radius: 1rem;
   min-width: 60px;
-  background-color: #234cf2;
-  border: 1px solid #234cf2;
+  background-color: @color5;
+  border: 1px solid @color5;
   background-size: 400% 400%;
   animation: gradient_f 20s ease-in-out infinite;
   transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
 #workspaces button:hover {
-  background-color: #234cf2;
-  border-color: #234cf2;
+  background-color: @color5;
+  border-color: @color5;
 }
 
 #workspaces button.active:hover {

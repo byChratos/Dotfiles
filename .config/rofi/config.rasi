@@ -1,0 +1,39 @@
+/* Wal colors */
+@import "~/.cache/wal/colors-rofi-dark"
+
+/* Configuration */
+configuration {
+    modi:                       "drun,run";
+    font:                       "Gabarito 18";
+    show-icons:                 true;
+    icon-theme:                 "kora";
+    display-drun:               "APPS";
+    display-run:                "RUN";
+    display-filebrowser:        "FILES";
+    display-window:             "WINDOW";
+	drun-display-format:        "{name}";
+    hover-select:               true;
+    me-select-entry:            "";
+    me-accept-entry:            "MousePrimary";
+    window-format:              "{w} · {c} · {t}";
+}
+
+window {
+    width:                        900px;
+    x-offset:                     0px;
+    y-offset:                     0px;
+    spacing:                      0px;
+    padding:                      0px;
+    margin:                       0px; 
+    color:                        #FFFFFF;
+    border:                       3px;
+    border-color:                 #FFFFFF;
+    cursor:                       "default";
+    transparency:                 "real";
+    location:                     center;
+    anchor:                       center;
+    fullscreen:                   false;
+    enabled:                      true;
+    border-radius:                10px;
+    background-color:             transparent;
+}
