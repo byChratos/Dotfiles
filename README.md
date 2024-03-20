@@ -5,6 +5,8 @@ Dotfiles for my Arch Linux installation on my laptop. (Everything WIP)
 - **WM**: [Hyprland](https://github.com/hyprwm/Hyprland)
 - **Terminal**: [Alacritty](https://github.com/alacritty/alacritty)
 - **Bar**: [Waybar](https://github.com/Alexays/Waybar)
+- **Menu**: [rofi](https://github.com/davatorium/rofi)
+- **Power Menu**: [wlogout](https://github.com/ArtsyMacaw/wlogout)
 
 ## Fonts and Icons
 - **Waybar Font**: [Gabarito](https://fonts.google.com/specimen/Gabarito)
