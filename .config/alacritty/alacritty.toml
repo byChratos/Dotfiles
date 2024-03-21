@@ -1,18 +1,14 @@
+import=["~/.cache/wal/colors-alacritty.toml"]
+
 [font]
 size = 20.0
 
 [font.normal]
-family = "Hack"
+family = "FiraCode Nerd Font"
 
 [window]
 opacity = 0.8
 
 [window.padding]
-x = 10
-y = 10
-
-[colors.primary]
-foreground = "#ffffff"
-
-[colors.cursor]
-cursor = "#cc3333"
+x = 25
+y = 0

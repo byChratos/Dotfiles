@@ -3,7 +3,7 @@
 {
     "custom/launcher": {
         "format": "",
-        "on-click": "rofi -show drun",
+        "on-click": "rofi -show drun -normal-window",
         "tooltip": false
     },
 
@@ -31,7 +31,7 @@
     "hyprland/window": {
         "format": " {initialTitle}",
         "rewrite": {
-            "(.*) Mozilla Firefox": " Firefox",
+            "(.*) Mozilla Firefox": "  Firefox",
             "(.*) Alacritty": " Alacritty",
             "(.*) Code - OSS": " VSCode",
             "(.*) Discord": " Discord",
