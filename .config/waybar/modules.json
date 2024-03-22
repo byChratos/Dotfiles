@@ -9,7 +9,7 @@
 
     "custom/wlogout": {
         "format": "",
-        "on-click": "sleep 0.05 && wlogout",
+        "on-click": "sleep 0.05 && wlogout -b 2",
         "tooltip": false
     },
 
